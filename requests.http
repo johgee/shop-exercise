@@ -1,0 +1,30 @@
+### items Index
+GET http://localhost:3000/items.json
+
+### items Create
+POST http://localhost:3000/items.json
+Content-Type: application/json
+
+{
+"name": "Test name",
+"price": 10000,
+"description": "test description",
+"image_url": "test image_url"
+}
+
+### items Show
+GET http://localhost:3000/items/1.json
+
+### items Update
+PATCH http://localhost:3000/items/8.json
+Content-Type: application/json
+
+{
+"name": "New name",
+"price": 10000000,
+"description": "update description",
+"image_url": "update image_url"
+}
+
+### items Destroy
+DELETE http://localhost:3000/items/8.json
